@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8b00f4755d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="PORTFOLIO" class="logo">
+                <ul id="sidemenu">
+                    <li class="item"><a href="#header">Home</a></li>
+                    <li class="item"><a href="#about">About</a></li>
+                    <li class="item"><a href="#services">Services</a></li>
+                    <li class="item"><a href="#project">Projects</a></li>
+                    <li class="item"><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="text">
+                <h1>Hello!<br>I'm <span>Mehroz Ali</span></h1>
+                <p>and I am a Web Developer</p>
+                <a href="My_resume.pdf" download="My_resume.pdf" class="btn">Download CV</a>
+            </div>
+            <div class="image"></div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container2">
+            <div class="row">
+                <div class="col1">
+                    <img src="pic1.jpg">
+                </div>
+                <div class="col2">
+                    <h1 class="sub_title1">About Me</h1>
+                    <p>I am Mehroz Ali from Karachi, Pakistan. I am pursuing my Graduation from The Federal Urdu
+                        University Arts, Science and Technology. I am a Full-Stack(MERN) Developer. I have a deep
+                        understanding of web developnment technologies such as HTML, CSS, JavaScript, NodeJS, MongoDB,
+                        Express, and ReactJs. As a web Developer, my responsibility to create websites that are both
+                        functional and aesthentically pleasing, and to deliver high-quality web solutions that meet the
+                        needs of your clients and user.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Developer</span><br />HTML, CSS, JS & ReactJs</li>
+                            <li><span>Back-End Developer</span><br />NodeJs, Express & MongoDB</li>
+                            <li><span>Full-Stack Developer (MERN Stack)</span><br />ReactJs, NodeJs, Express & MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresh</span><br />But Create 3 websites as project</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br />Bachelors in Computer Science from Federal urdu University
+                            </li>
+                            <li><span>2023</span><br />MERN Stack Web Developer at Bano Qabil Program Organized by
+                                Alkhidmat Foundatiion</li>
+                            <li><span>2021-2022</span><br />PCIT (Professional Certificate Information Technology) from
+                                Sindh Technical Board Karachi</li>
+                            <li><span>2020</span><br />Intermediate in Pre-Engineering from Degree Boys Collage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Services</h1>
+            <p class="se">Let's build quality products in programming and designs with my sevices.</p>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Developer</h2>
+                    <p>I create interactive and visually appealing front-end interfaces using React. My focus is on delivering a seamless user experience with responsive design, fast loading times, and intuitive navigation.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Back-End Developer</h2>
+                    <p>I build robust and scalable server-side applications using Node.js and Express.js. My back-end solutions are designed for optimal performance, ensuring your application can handle high traffic and complex operations.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Full-Stack Developer</h2>
+                    <p>I build dynamic, responsive, and user-friendly web applications from scratch. By leveraging the power of the MERN stack, I ensure seamless integration between the front-end and back-end, providing a cohesive and efficient user experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project -->
+
+    <div id="project">
+        <div class="container">
+            <h1 class="sub_title">Projects</h1>
+            <div class="flex">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper">
+                                <div class="items4">
+                                    <img
+                                        src="https://w0.peakpx.com/wallpaper/266/794/HD-wallpaper-audi-amoled-brands-car.jpg" />
+                                    <div class="layer">
+                                        <h3>Audi</h3>
+                                        <p>This is a clone website.
+                                        </p>
+                                        <a href="https://mehroz998.github.io/audi/" target="_blank"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                                <div class="items4">
+                                    <img
+                                        src="Untitled-1.jpg" />
+                                    <div class="layer">
+                                        <h3>E-Commerce</h3>
+                                        <p>This Website is create using HTML, CSS and JS
+                                        </p>
+                                        <a href="https://mehroz998.github.io/Ecommerce/" target="_blank"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                                <div class="items4">
+                                    <img
+                                        src="https://w0.peakpx.com/wallpaper/266/794/HD-wallpaper-audi-amoled-brands-car.jpg" />
+                                    <div class="layer">
+                                        <h3>Audi</h3>
+                                        <p>This is a clone website.
+                                        </p>
+                                        <a href="https://mehroz998.github.io/audi/" target="_blank"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="items4">
+                                    <img
+                                        src="https://w0.peakpx.com/wallpaper/266/794/HD-wallpaper-audi-amoled-brands-car.jpg" />
+                                    <div class="layer">
+                                        <h3>Audi</h3>
+                                        <p>This is a clone website.
+                                        </p>
+                                        <a href="https://mehroz998.github.io/audi/" target="_blank"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                                <div class="items4">
+                                    <img
+                                        src="https://w0.peakpx.com/wallpaper/266/794/HD-wallpaper-audi-amoled-brands-car.jpg" />
+                                    <div class="layer">
+                                        <h3>Audi</h3>
+                                        <p>This is a clone website.
+                                        </p>
+                                        <a href="https://mehroz998.github.io/audi/" target="_blank"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                                <div class="items4">
+                                    <img
+                                        src="https://w0.peakpx.com/wallpaper/266/794/HD-wallpaper-audi-amoled-brands-car.jpg" />
+                                    <div class="layer">
+                                        <h3>Audi</h3>
+                                        <p>This is a clone website.
+                                        </p>
+                                        <a href="https://mehroz998.github.io/audi/" target="_blank"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="items4">
+                                    <img
+                                        src="https://w0.peakpx.com/wallpaper/266/794/HD-wallpaper-audi-amoled-brands-car.jpg" />
+                                    <div class="layer">
+                                        <h3>Audi</h3>
+                                        <p>This is a clone website.
+                                        </p>
+                                        <a href="https://mehroz998.github.io/audi/" target="_blank"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                                <div class="items4">
+                                    <img
+                                        src="https://w0.peakpx.com/wallpaper/266/794/HD-wallpaper-audi-amoled-brands-car.jpg" />
+                                    <div class="layer">
+                                        <h3>Audi</h3>
+                                        <p>This is a clone website.
+                                        </p>
+                                        <a href="https://mehroz998.github.io/audi/" target="_blank"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                                <div class="items4">
+                                    <img
+                                        src="https://w0.peakpx.com/wallpaper/266/794/HD-wallpaper-audi-amoled-brands-car.jpg" />
+                                    <div class="layer">
+                                        <h3>Audi</h3>
+                                        <p>This is a clone website.
+                                        </p>
+                                        <a href="https://mehroz998.github.io/audi/" target="_blank"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact">
+            <div class="container5">
+                <h1 class="sub_title">Contact Me</h1>
+                <p style="font-size: 10px; margin: 0;">Currently Form is not working But links work properly</p>
+                <div class="incontainer5">
+                    <form class="contact">
+                        
+                        <label>
+                            <input type="text" name="Name" id="name" placeholder="  Your Name">
+                        </label>
+                        <label>
+                            <input type="email" name="email" id="email" placeholder="  Your Email">
+                        </label>
+                        <label>
+                            <input type="tel" name="phoneno" id="phone" placeholder="  Your Contact No.">
+                        </label>
+                        <label>
+                            <textarea name="message" cols="30" rows="10" id="message" placeholder="  Your Message"></textarea>
+                        </label>
+                    </form>
+                    <div class="social">
+                        <p id="con">Contact</p>
+                        <div class="log"><i class="fa-solid fa-envelope" id="emaillogo"></i>
+                            <p><a href="mailto:mehrozali997@gmail.com">mehrozali997@gmail.com</a></p>
+                        </div>
+                        <div class="log"><i class="fa-solid fa-phone" id="emaillogo"></i>
+                            <p><a href="tel:+03162915219">0316-2915219</a> </p>
+                        </div>
+                        <div class="logos">
+                            <a href="https://www.facebook.com/people/FixTech/61558796034738/" target="_blank"><i class="fa-brands fa-facebook-f" id="emaillogo"></i></a>
+                            <a href="https://www.linkedin.com/in/mehrozali998/" target="_blank"><i class="fa-brands fa-linkedin-in" id="emaillogo"></i></a>
+                        </div>
+                        <div class="submit"><button onclick="sendEmail()" disabled >Submit</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "mehrozali689@gmail.com",
+                    Password : "ED48E6FD32AFA415084FFDBC9CB7518766A9",
+                    To : 'mehrozali997@gmail.com',
+                    From : "mehrozali689@gmail.com",
+                    Subject : "This is the subject",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
+        </script>
+</body>
+
+</html>
