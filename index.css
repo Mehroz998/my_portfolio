@@ -13,6 +13,7 @@ header{
     background-size: cover;
     background-position: center;
     display: block;
+    min-height: 640px;
 }
 html{
     scroll-behavior: smooth;
@@ -257,6 +258,7 @@ nav ul li a:hover{
     height: 450px;
     width: 280px;
     border-radius: 10px;
+    margin: 10px 10px;
     position: relative;
     overflow: hidden;
 }
@@ -367,6 +369,9 @@ nav ul li a:hover{
 .carousel-control-next:hover{
     background: transparent;
 }
+.mehroz{
+width: fit-content;
+}
 
 /* Contact */
 .container5{
@@ -390,11 +395,11 @@ nav ul li a:hover{
 }
 .social{
     height: 480px;
-    width: 30%;
+    width: 40%;
 }
 .contact{
-    height: 480px;
-    width: 60%;
+    /* height: 480px; */
+    width: 55%;
 }
 .social p{
     color: white;
@@ -482,6 +487,8 @@ nav .fa-solid{
     padding: 10px;
 }
 
+
+
 /* #contact{
     display: block;
 } */
@@ -491,7 +498,7 @@ nav .fa-solid{
     width: 100px;
     background-color: brown;
     color: white;
-    margin-top: 100px;
+    margin-top: 10px;
     border: none;
     border-radius: 30px;
     margin-left: 20px;
@@ -502,6 +509,21 @@ button:hover{
     transform: translateY(-10px);
     background-color: rgb(133, 32, 32);
 }
+
+.carousel-item.active{
+    display: flex;
+    justify-content: center;
+}
+
+/* .carousel-inner{
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+
+
 
 /* Resposive */
 
@@ -628,9 +650,9 @@ button:hover{
         width: 80vw;
     }
 
-    .items4:not(:first-child){
+    /* .items4:not(:first-child){
         display: none;
-    }
+    } */
 
     
 }
@@ -659,7 +681,7 @@ button:hover{
         margin: 40px 25px;
     }
     .text{
-        margin-top: 50%;
+        margin-top: 25%;
     }
 }
 
@@ -668,3 +690,5 @@ button:hover{
         display: none;
     }
 }
+
+
