@@ -614,7 +614,7 @@ button:hover{
         width: 80vw;
     }
     .contact{
-        height: auto;
+        /* height: auto; */
         width: 80vw;
     }
     .contact input{
